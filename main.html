@@ -1,40 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>網頁作業</title>
+    <title>前端基礎作業2 - 我的作品與首頁</title>
 </head>
 <body>
     <header>
-        <h1>網頁作業</h1>
-        <h2>我的作品集</h2>
-        <nav>
-            <ul>
-                <li><a href="main.html">首頁</a></li>
-                <li><a href="about.html">關於我</a></li>
-                <li><a href="projects.html">作品集</a></li>
-                <li><a href="contact.html">聯絡我</a></li>
-            </ul>
-        </nav>
+        <div class="container header-inner">
+            <div class="logo">MyLogo</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">首頁</a></li>
+                    <li><a href="#about">關於我</a></li>
+                    <li><a href="#portfolio">作品集</a></li>
+                    <li><a href="#contact">聯絡方式</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <section>
-            <h3>歡迎來到我的作品集</h3>
-            <p>這裡展示了我過去的專案和作品，請隨意瀏覽！</p>
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <h1>打造吸睛網頁，從這裡開始</h1>
+                <p>我是前端新手，專注於 HTML、CSS、JavaScript，喜歡將創意視覺化成實際作品。</p>
+                <a class="btn" href="#portfolio">我的行動宣言</a>
+            </div>
         </section>
-        <section class="about">about me</section>
-        <section class="portfolio">
-            <h3>作品</h3>
-            <ul>
-                <li><a href="project1.html">a</a></li>
-                <li><a href="project2.html">b</a></li>
-                <li><a href="project3.html">c</a></li>
-            </ul>
+
+        <section id="about" class="about">
+            <div class="container about-grid">
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/400x400.png?text=About+Me" alt="關於我的照片">
+                </div>
+                <div class="about-text">
+                    <h2>關於我</h2>
+                    <p>我熱衷於網頁設計與使用者體驗，持續學習新技術，並且把每個小專案當成作品集的里程碑。</p>
+                    <p>擅長排版、響應式設計、以及卡片式作品展示。目標是成為能獨立完成設計與實作的前端工程師。</p>
+                </div>
+            </div>
         </section>
-        <footer>
-            <p>&copy; 2026 我的作品集. All rights reserved.</p>
-        </footer>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2>作品集</h2>
+                <p>這裡展示我練習與實作的前端專案。</p>
+                <div class="card-grid">
+                    <article class="card">
+                        <img src="https://via.placeholder.com/450x280.png?text=Project+1" alt="專案1 圖片">
+                        <h3>響應式網站設計</h3>
+                        <p>使用 CSS Grid 與 Flexbox 建構自適應版面，手機/平板/電腦皆可讀。</p>
+                        <a class="card-btn" href="#" target="_blank">查看細節</a>
+                    </article>
+                    <article class="card">
+                        <img src="https://via.placeholder.com/450x280.png?text=Project+2" alt="專案2 圖片">
+                        <h3>互動式投影片</h3>
+                        <p>純 JavaScript 實作簡單輪播，搭配動畫與按鈕控制。</p>
+                        <a class="card-btn" href="#" target="_blank">查看細節</a>
+                    </article>
+                    <article class="card">
+                        <img src="https://via.placeholder.com/450x280.png?text=Project+3" alt="專案3 圖片">
+                        <h3>CSS 美化表單</h3>
+                        <p>透過變數與過渡效果優化表單 UI，提升填寫體驗。</p>
+                        <a class="card-btn" href="#" target="_blank">查看細節</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <p>&copy; 2026 我的作品集。版權所有。</p>
+            <div class="social">
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
